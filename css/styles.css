@@ -1,0 +1,193 @@
+/* Base */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  color: #222222;
+  background: #f7f7f7;
+}
+
+h1 {
+  margin: 0 0 16px;
+  font-size: 28px;
+  color: #c8102e;
+}
+
+h2 {
+  margin: 0 0 8px;
+  font-size: 20px;
+}
+
+a {
+  color: #1a4fb5;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Layout */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+.container.narrow {
+  max-width: 520px;
+}
+
+.page-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px 24px;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #c8102e;
+}
+
+.page-header h1 {
+  margin: 0;
+}
+
+/* Gift card list */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  padding: 16px;
+  text-align: center;
+}
+
+.card img {
+  margin: 0 auto 12px;
+  max-height: 160px;
+  object-fit: contain;
+}
+
+.card p {
+  margin: 0;
+}
+
+/* Gift card details */
+.details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: flex-start;
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+.details img {
+  width: 100%;
+  max-width: 300px;
+}
+
+.details dl {
+  flex: 1 1 240px;
+  margin: 0;
+}
+
+.details dt {
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+.details dt:first-child {
+  margin-top: 0;
+}
+
+.details dd {
+  margin: 0;
+}
+
+/* Forms */
+form {
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  padding: 20px;
+}
+
+.field {
+  margin-bottom: 16px;
+}
+
+label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #777777;
+  border-radius: 4px;
+  background: #ffffff;
+}
+
+input:focus,
+select:focus,
+.btn:focus {
+  outline: 3px solid #1a4fb5;
+  outline-offset: 2px;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 10px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  background: #c8102e;
+  border: 2px solid #c8102e;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #a00d24;
+  border-color: #a00d24;
+}
+
+.btn-secondary {
+  color: #c8102e;
+  background: #ffffff;
+}
+
+.btn-secondary:hover {
+  color: #ffffff;
+}

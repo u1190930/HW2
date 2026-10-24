@@ -1,0 +1,44 @@
+AI USE - HW2: AirAsia Rewards Redemption (HTML and CSS)
+
+AI TOOL USED
+Claude (Anthropic), Claude Sonnet 5.5, in the Claude chat app.
+
+PROMPTS I USED
+1. I pasted the HW2 assignment instructions and asked: "How can I accomplish this?"
+   (I wanted to know how to build the site in a GitHub Codespace with AI assistance.)
+2. "Can you help me write code that will create each page and explain what you've written to me.
+
+HOW AI HELPED
+- Planning: Claude outlined the workflow for this assignment: create the repository and
+  Codespace, create the folder structure, write the pages, test in the browser, and push to
+  GitHub.
+- Translating my HW1 wireframes into code: Claude wrote the HTML for login.php,
+  card-list.php, card-details.php, card-add.php, and card-update.php, and the external
+  stylesheet css/styles.css. It used semantic elements (main, header, nav, ul/li, dl),
+  a label connected to every form control, alt text on images, and realistic sample
+  gift-card data.
+- Understanding: Claude explained each page element by element (the page skeleton, forms,
+  labels and inputs, the select dropdown, links, images, and description lists) so I could
+  understand and explain the code I am submitting.
+- Debugging and review: Claude explained why my test of the Add and Update forms behaved
+  the way it did (see below).
+
+ONE SUGGESTION I TESTED AND VERIFIED
+After running the site in my Codespace, I clicked through the full workflow and everything
+linked correctly. However, when I submitted the Add Gift Card form, the new card did not
+appear on the list, and after submitting the Update form the list looked unchanged. I
+asked Claude about it. Claude pointed to the assignment text: because this is a static
+HTML and CSS assignment, form submission does not need to save information, and the form
+action only needs to take the user to card-list.php. I checked the assignment
+instructions and confirmed this. The card list is hardcoded HTML, so saving and showing
+new data requires PHP and a database, which come later in the project. I therefore did
+not change the code. I confirmed that both forms submit to card-list.php, as required.
+
+WHAT I VERIFIED MYSELF
+- Every page loads, and the images, links, and form actions work in my browser.
+- The required workflow works: login -> card-list -> card-details -> card-update -> card-list,
+  and card-list -> card-add -> card-list.
+- Card ID is not an editable form field on any page.
+- Every form control has a label.
+- The files use the exact required filenames, the CSS is in an external file linked from
+  every page, and images are in the images folder.
