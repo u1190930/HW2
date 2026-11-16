@@ -5,10 +5,62 @@
 
 body {
   margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
   color: #222222;
   background: #f7f7f7;
+}
+
+.site-header {
+  color: #ffffff;
+  background: #c8102e;
+}
+
+.site-header-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.site-brand {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.site-brand:hover {
+  text-decoration: underline;
+}
+
+.site-nav {
+  background: #ffffff;
+  border-bottom: 1px solid #cccccc;
+}
+
+.site-nav-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 16px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.site-nav a {
+  display: block;
+  padding: 12px 16px;
+  color: #c8102e;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+  background: #f7f7f7;
+  text-decoration: underline;
 }
 
 h1 {
@@ -35,12 +87,33 @@ img {
 /* Layout */
 .container {
   max-width: 960px;
+  width: 100%;
   margin: 0 auto;
   padding: 24px 16px;
 }
 
+main.container {
+  flex: 1;
+}
+
 .container.narrow {
   max-width: 520px;
+}
+
+.site-footer {
+  margin-top: auto;
+  color: #ffffff;
+  background: #222222;
+}
+
+.site-footer-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.site-footer p {
+  margin: 0;
 }
 
 .page-header {
@@ -134,6 +207,41 @@ form {
   margin-bottom: 16px;
 }
 
+.form-errors {
+  color: #a00d24;
+  background: #ffffff;
+  border: 1px solid #c8102e;
+  border-radius: 4px;
+  padding: 12px 12px 12px 36px;
+}
+
+.validation-results {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+}
+
+.validation-results th,
+.validation-results td {
+  padding: 12px;
+  border: 1px solid #cccccc;
+  text-align: left;
+}
+
+.validation-results thead {
+  background: #eeeeee;
+}
+
+.test-pass {
+  color: #176b36;
+  font-weight: bold;
+}
+
+.test-fail {
+  color: #a00d24;
+  font-weight: bold;
+}
+
 label {
   display: block;
   margin-bottom: 4px;
@@ -163,6 +271,10 @@ select:focus,
   gap: 12px;
 }
 
+.details-actions {
+  margin-top: 20px;
+}
+
 /* Buttons */
 .btn {
   display: inline-block;
@@ -181,6 +293,11 @@ select:focus,
 .btn:hover {
   background: #a00d24;
   border-color: #a00d24;
+}
+
+.btn-danger {
+  background: #8c0b21;
+  border-color: #8c0b21;
 }
 
 .btn-secondary {

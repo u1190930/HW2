@@ -1,12 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Login | AirAsia Rewards Redemption</title>
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
+<?php
+$pageTitle = 'Login | AirAsia Rewards Redemption';
+require_once __DIR__ . '/includes/header.php';
+require_once __DIR__ . '/includes/nav.php';
+?>
   <main class="container narrow">
     <h1>AirAsia Rewards Redemption</h1>
     <h2>Login</h2>
@@ -25,5 +21,4 @@
       <button type="submit" class="btn">Login</button>
     </form>
   </main>
-</body>
-</html>
+<?php require_once __DIR__ . '/includes/footer.php'; ?>
